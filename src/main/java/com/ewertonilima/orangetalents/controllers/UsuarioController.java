@@ -1,8 +1,6 @@
 package com.ewertonilima.orangetalents.controllers;
 
-import java.net.URI;
-
-import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,7 +11,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.ewertonilima.orangetalents.entities.Usuario;
 import com.ewertonilima.orangetalents.services.UsuarioService;
@@ -32,7 +29,7 @@ public class UsuarioController {
 	}
 
 	@PostMapping
-	public ResponseEntity<Void> insert(@RequestBody Usuario usuario) {
+	public ResponseEntity<Void> insert(@Valid @RequestBody Usuario usuario) {
 		usuario = usuarioService.insert(usuario);
 		return ResponseEntity.status(HttpStatus.CREATED).build();
 	}
