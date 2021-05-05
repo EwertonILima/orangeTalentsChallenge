@@ -105,7 +105,7 @@ Services → **UsuarioService**, nessa camada já vamos começar a fazer um trat
 
 Controllers → **UsuarioController**, agora podemos fazer os primeiros testes de funcionalidades da API.
 
-Vou usar o **POSTMAN **para interagir com os **Endpoints** que criamos. 
+Vou usar o **POSTMAN** para interagir com os **Endpoints** que criamos. 
 
 - **Usuário cadastrado com sucesso, retornando status 201**
 
