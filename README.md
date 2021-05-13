@@ -1,4 +1,4 @@
-#  **Desenvolvendo uma API REST para com Spring Boot.**
+#  **Desenvolvendo uma API REST com Spring Boot.**
 
 Nesse post iremos criar uma API REST para cadastro de usuário e endereço utilizando framework da linguagem Java, o Spring, que dispõe de diversas tecnologias para simplificar o desenvolvimento da nossa estrutura de código, e pelo ganho de manutenção por ter interdependência mínima entre os objetos.
 
